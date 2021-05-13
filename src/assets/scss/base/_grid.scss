@@ -1,0 +1,36 @@
+:root {
+    --content-width: 1380px; 
+    --gutter: 12px;
+    --mob-padding: 20px;
+    --font: 'Roboto';
+}
+
+@mixin col() {
+    margin-right: var(--gutter);
+    margin-left: var(--gutter);
+}
+
+@mixin size($size) {
+    width: calc(100% * #{$size} - var(--gutter) * 2);
+}
+
+// @mixin offset($size) {
+//     margin-left: calc(100% * #{$size} - var(--gutter) * 2);
+// }
+
+
+@mixin row() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter) * -1);
+    margin-right: calc(var(--gutter) * -1);
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.row {
+    @include row();
+}

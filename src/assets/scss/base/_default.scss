@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto';
+    // font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+
+    // @media (min-width: 767px) {
+    //     margin: 10px;
+    // }
+}
+
+
