@@ -1,12 +1,14 @@
-@mixin h-center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+$fast: 0.3s;
+$slow: 0.5s;
 
-@mixin v-center() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+:root {
+  --content-width: 1336px;
+  --gutter: 12px;
+  --mob-padding: 20px;
+
+  --primary-text-color: #ffffff;
+  --active-text-color: #c89afc;
+
+  --primary-bg-color: #333333;
+  --second-bg-color: #121212;
 }

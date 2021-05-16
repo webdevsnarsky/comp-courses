@@ -1,21 +1,23 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Roboto';
-    // font-weight: 400;
+  font-family: "Roboto";
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    
-
-    // @media (min-width: 767px) {
-    //     margin: 10px;
-    // }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
+ul {
+  padding: 0;
+}
 
+.scroll-hidden {
+  overflow: hidden;
+}
