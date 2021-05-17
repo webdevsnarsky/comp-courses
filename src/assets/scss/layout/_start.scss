@@ -1,5 +1,4 @@
 .start {
-
   &__inner {
     padding: 100px 0;
   }
@@ -10,14 +9,10 @@
     align-items: center;
   }
 
-  // &__row {
-  //   align-items: center;
-  // }
-
   &__image-wrap {
     margin-left: var(--gutter);
     margin-right: 50px;
-    
+
     @include breakpoint(lg) {
       margin-right: 30px;
     }
@@ -41,13 +36,10 @@
 
   &__results {
     display: flex;
-    // flex-wrap: wrap;
-    margin-bottom: 100px;
 
     @include breakpoint(md) {
       flex-direction: column-reverse;
       margin: 40px auto 0;
-      // width: 50%;
     }
   }
 
@@ -61,17 +53,13 @@
       position: absolute;
       content: "";
       width: 101%;
-      background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
-
-      @include breakpoint(md) {
-        // width: none;
-      }
+      background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     }
 
     &:nth-of-type(1) {
       &::before {
         @include v-center;
-        top: 30%;
+        top: 33%;
         height: 80px;
 
         @include breakpoint(md) {
@@ -99,7 +87,6 @@
           height: 101%;
           width: 60px;
           z-index: 3;
-          
         }
       }
     }
@@ -107,7 +94,7 @@
     &:nth-of-type(3) {
       &::before {
         @include v-center;
-        top: 30%;
+        top: 33%;
         height: 30px;
 
         @include breakpoint(md) {
@@ -125,7 +112,7 @@
         transform: rotate(180deg);
         @include v-center;
         left: 0;
-        top: 28%;
+        top: 31%;
         height: 10px;
 
         @include breakpoint(md) {
@@ -143,8 +130,6 @@
   &__percent {
     margin-bottom: 135px;
   }
-
-
 
   &__descr {
     padding-right: 30px;

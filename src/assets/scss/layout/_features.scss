@@ -1,0 +1,49 @@
+.features {
+  &__inner {
+    padding: 100px 0 70px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 120px;
+
+    @include breakpoint(md) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__row {
+    justify-content: space-between;
+    @include breakpoint(md) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include col; 
+    @include size(3.8/12); 
+
+    @include breakpoint(md) {
+      @include size(8/12); 
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint(sm) {
+      @include size(12/12); 
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__item-image {
+    max-width: 100px;
+  }
+
+  // &__item-title {
+  //   max-width: 200px;
+  // }
+}
