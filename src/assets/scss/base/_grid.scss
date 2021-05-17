@@ -27,9 +27,9 @@ $breakpoints: (
   width: calc(100% * #{$size} - var(--gutter) * 2);
 }
 
-// @mixin offset($size) {
-//     margin-left: calc(100% * #{$size} - var(--gutter) * 2);
-// }
+@mixin offset($size) {
+    margin-left: calc(100% * #{$size} - var(--gutter));
+}
 
 @mixin row() {
   display: flex;
