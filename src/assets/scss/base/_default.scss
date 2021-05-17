@@ -23,6 +23,21 @@ img {
   width: 100%;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 67.2px;
+
+  @include breakpoint(lg) {
+    font-size: 36px;
+  }
+
+  @include breakpoint(md) {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+}
+
 .scroll-hidden {
   overflow: hidden;
 }

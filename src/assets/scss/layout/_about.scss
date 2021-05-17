@@ -1,20 +1,18 @@
 .about {
   &__inner {
-    padding: 200px 0;
+    padding: 100px 0;
 
     @include breakpoint(lg) {
-      padding: 150px 0;
+      padding: 75px 0;
     }
 
     @include breakpoint(md) {
-      padding: 120px 0;
+      padding: 50px 0;
     }
   }
 
-  .row {
-    @include breakpoint(md) {
-      justify-content: center;
-    }
+  &__row {
+    justify-content: center;
   }
 
   &__image-wrap {
@@ -39,21 +37,6 @@
       @include size(12/12);
       @include offset(0/12);
       @include col;
-    }
-  }
-
-  &__title {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 67.2px;
-
-    @include breakpoint(lg) {
-      font-size: 36px;
-    }
-
-    @include breakpoint(md) {
-      margin-bottom: 0;
-      font-size: 28px;
     }
   }
 
