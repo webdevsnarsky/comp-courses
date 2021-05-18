@@ -1,0 +1,116 @@
+.programm {
+  &__inner {
+    padding-top: 100px;
+    padding-bottom: 115px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    max-width: 410px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25.6px;
+    opacity: 0.5;
+  }
+
+  &__items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 6px;
+      background: var(--gradient);
+      z-index: 2;
+    }
+  }
+
+  &__item-wrap {
+    @include size(8/12);
+    @include breakpoint(md) {
+      @include size(10/12);
+    }
+    @include breakpoint(sm) {
+      @include size(12/12);
+    }
+    &:nth-child(odd) > .programm__item {
+      position: relative;
+      align-items: flex-end;
+      text-align: right;
+      margin-right: 50%;
+      padding-right: 100px;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 1px;
+        width: 40px;
+        background: rgba(255, 255, 255, 0.3);;
+      }
+
+      @include breakpoint(md) {
+        padding-right: 75px;
+      }
+      @include breakpoint(sm) {
+        padding-right: 50px;
+      }
+    }
+
+    &:nth-child(even) > .programm__item {
+      position: relative;
+      padding-left: 100px;
+      margin-left: 50%;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 40px;
+        background: rgba(255, 255, 255, 0.3);;
+      }
+
+      @include breakpoint(md) {
+        padding-left: 75px;
+      }
+      @include breakpoint(sm) {
+        padding-left: 50px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22.4px;
+    opacity: 0.5;
+  }
+
+  &__item-descr {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+
+    @include breakpoint(sm) {
+      font-size: 14px;
+    }
+  }
+
+
+}
