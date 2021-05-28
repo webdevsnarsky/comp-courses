@@ -1,0 +1,18 @@
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 67.2px;
+
+  @include breakpoint(lg) {
+    font-size: 36px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 28px;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

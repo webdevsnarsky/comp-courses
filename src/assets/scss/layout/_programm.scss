@@ -10,7 +10,14 @@
   }
 
   &__title {
+    position: relative;
     margin-bottom: 30px;
+    &::before {
+      @include h-center;
+      content: url('../img/section-logo.svg');
+      margin-bottom: 50px;
+      transform: rotate(135deg);
+    }
   }
 
   &__subtitle {

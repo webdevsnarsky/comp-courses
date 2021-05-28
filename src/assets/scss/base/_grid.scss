@@ -1,3 +1,20 @@
+:root {
+  --content-width: 1336px;
+  --gutter: 12px;
+  --mob-padding: 20px;
+
+  --primary-text-color: #ffffff;
+  --active-text-color: #c89afc;
+
+  --primary-bg-color: #333333;
+  --second-bg-color: #121212;
+  --body-bg-color: #000000;
+
+  --bottom-border-color: rgba(255, 255, 255, 0.3);
+
+  --gradient: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
 $breakpoints: (
   // breakpoints
   xl: 1400px,
@@ -28,7 +45,7 @@ $breakpoints: (
 }
 
 @mixin offset($size) {
-    margin-left: calc(100% * #{$size} - var(--gutter));
+    margin-left: calc(100% * #{$size} + var(--gutter));
 }
 
 @mixin row() {

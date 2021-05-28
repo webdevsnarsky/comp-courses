@@ -4,18 +4,17 @@
     padding-bottom: 100px;
   }
 
-  &__box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 110px;
+  &__title {
+    &::before {
+      content: url('../img/section-logo.svg');
+      display: inline-block;
+      padding-right: 30px;
+      transform: rotate(317deg);
+    }
   }
 
-  &__logo-wrap {
-    margin-right: 40px;
-  }
-
-  &__logo {
-    margin-bottom: 50%;
+  &__items {
+    padding-top: 75px;
   }
 
   &__item {
